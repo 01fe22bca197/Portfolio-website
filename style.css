@@ -1,0 +1,80 @@
+/* Section Styling */
+section {
+    margin-top: 80px; /* Adjust for nav bar height */
+    padding: 40px;
+    display: none; /* Hide all sections by default */
+    font-size: 20px; /* Larger font for content */
+    background-color: #fffd8c; /* Light background color for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Make the currently active section visible */
+.active {
+    display: block;
+}
+
+/* Hover effect on sections */
+section:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Style for Section Titles */
+h2 {
+    color: #333;
+    font-size: 36px; /* Larger section headings */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* A cleaner font */
+    text-transform: uppercase; /* Make section titles stand out */
+    letter-spacing: 1px; /* Add some letter-spacing for readability */
+}
+
+/* Style for paragraphs and list items in sections */
+section p, section ul li {
+    color: #333;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact link styling */
+a {
+    color: #e7d12f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #f1c40f; /* Lighter yellow for hover */
+}
+
+/* Enhanced Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #333;
+}
+
+footer a {
+    color: #e7d12f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f1c40f; /* Hover effect for footer link */
+}
+
+/* Profile Summary Styling */
+.profile-summary {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e7d12f;
+}

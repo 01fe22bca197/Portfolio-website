@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpitha MS - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for the navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px; /* Increased font size */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ensure sections have space for the fixed navigation */
+        section {
+            margin-top: 80px; /* Adjust for nav bar height */
+            padding: 40px;
+            display: none; /* Hide all sections by default */
+            font-size: 20px; /* Larger font for content */
+        }
+
+        /* Make the currently active section visible */
+        .active {
+            display: block;
+        }
+
+        /* Style for the header */
+        header {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        header h1 {
+            font-size: 48px; /* Larger font size for name */
+            margin-bottom: 10px;
+        }
+
+        .profile-summary {
+            font-size: 28px; /* Larger font size for profile summary */
+            color: #000000;
+        }
+
+        /* Style for the footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        footer a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #e7d12f;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #000000;
+            font-size: 32px; /* Larger section headings */
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 28px; /* Larger project titles */
+            margin-top: 25px;
+            color: #000000;
+        }
+
+        /* List items in sections */
+        section ul {
+            padding-left: 30px;
+            font-size: 24px; /* Larger font size for lists */
+        }
+
+        section ul li {
+            margin-bottom: 12px;
+            color: #000000;
+        }
+
+        section p {
+            font-size: 22px; /* Larger font size for paragraphs */
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* Contact link styling */
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#education" onclick="showSection('education')">Education</a></li>
+            <li><a href="#tech-skills" onclick="showSection('tech-skills')">Technical Skills</a></li>
+            <li><a href="#languages" onclick="showSection('languages')">Languages</a></li>
+            <li><a href="#certifications" onclick="showSection('certifications')">Certifications</a></li>
+            <li><a href="#soft-skills" onclick="showSection('soft-skills')">Soft Skills</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Arpitha MS</h1>
+        <p class="profile-summary">Curiosity-driven and results-oriented professional</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about active">
+        <h2>About</h2>
+        <p>I am a driven and detail-oriented professional with a passion for learning and growing in the field of computer applications. With a strong foundation in programming languages, data analysis, and machine learning, I strive to build solutions that are efficient and impactful. I am continuously looking to expand my skill set and apply my knowledge to real-world challenges.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +91 8660387549</p>
+        <p><strong>Email:</strong> <a href="mailto:msarpitha1904@gmail.com">msarpitha1904@gmail.com</a></p>
+        <p><strong>Address:</strong> C-5 8/2 Kaiga Township, Karwar, Uttara Kannada District, Karnataka-581400</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p><strong>KLE Technological University Hubli</strong> - Bachelor of Computer Applications (2022-2025)</p>
+        <p><strong>Atomic Energy Central School</strong> - Intermediate (12th)</p>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="tech-skills" class="tech-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML & CSS, JavaScript</li>
+            <li>C, C++, Java, Python</li>
+            <li>Machine Learning Algorithms</li>
+            <li>MySQL, MongoDB</li>
+            <li>Object-Oriented Programming (OOP)</li>
+        </ul>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <h2>Languages</h2>
+        <p>English: Fluent</p>
+        <p>Hindi: Fluent</p>
+        <p>Kannada: Fluent</p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Java</li>
+            <li>Introduction to Big Data Tools for Beginners</li>
+            <li>ABC's of Malware Analysis</li>
+            <li>Fundamentals of Information Security</li>
+        </ul>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="soft-skills" class="soft-skills">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Time Management</li>
+            <li>Initiative</li>
+            <li>Continuous Learning</li>
+            <li>Problem Solving and Algorithmic Thinking</li>
+            <li>Attention to Details</li>
+            <li>Teamwork</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <h3>Fashion Recommendation System</h3>
+        <p>A machine learning algorithm recommending products based on past app category usage. (Jan 2023 - Feb 2023)</p>
+
+        <h3>Portfolio</h3>
+        <p>Developed a responsive web application using HTML, CSS, and JavaScript with interactive features. (Dec 2022 - Jan 2023)</p>
+
+        <h3>Soil Optimization Model</h3>
+        <p>Data-driven predictive models for sustainable soil management using historical agricultural data.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Designed with ❤ by M S Arpitha | <a href="mailto:msarpitha1904@gmail.com">Contact Me</a></p>
+    </footer>
+
+    <!-- JavaScript to toggle the visibility of sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+
+        // Initially show the first section (about)
+        window.onload = function() {
+            showSection('about');
+        };
+    </script>
+</body>
+</html>
